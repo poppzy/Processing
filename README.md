@@ -3,12 +3,12 @@
 ## 01 - Fundamentals
 
 	Assignment - Klar
-	Extra - WIP
+	Extra - DNF
 
 ## 02 - Learning to Program
 
 	Assignment - Klar
-	Extra - WIP
+	Extra - Klar
 
 ## 03 - Vectors
 	Assignment - WIP
