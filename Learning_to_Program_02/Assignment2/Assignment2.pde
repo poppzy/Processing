@@ -15,14 +15,14 @@ void draw()
     //Draw our scan lines.
   for (int i = 0; i < height; i += spaceBetweenLines) 
   {
-  	if (i % 3 == 0)
-  	{
-  		stroke (0, 0, 0, 255);
-  	}
-	else
-	{
-		stroke (0, 0, 0, 50);
-	}
+    if (i % 3 == 0)
+    {
+      stroke (0, 0, 0, 255);
+    }
+  else
+  {
+    stroke (0, 0, 0, 50);
+  }
     line(0, 1000 - i, i, 0);
     line(1000, 1000 - i, 1000 - i, 0);
     line(1000, i, 1000 - i, 1000);
