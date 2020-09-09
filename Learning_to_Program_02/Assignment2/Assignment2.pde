@@ -9,7 +9,7 @@ void draw()
 {
     //Clear background
   background(255, 255, 255);
-  stroke(0, 0, 0);
+  stroke(0, 255, 0);
   strokeWeight(2);
 
     //Draw our scan lines.
@@ -17,15 +17,15 @@ void draw()
   {
   	if (i % 3 == 0)
   	{
-  		stroke (0, 0, 0, 200);
+  		stroke (0, 0, 0, 255);
   	}
 	else
 	{
 		stroke (0, 0, 0, 50);
 	}
-    line(height, i, i, 0);
-    line(i, height, 0, i);
-    line(height, i, height - i, height);
-    line(0, height - i, i, 0);
+    line(0, 1000 - i, i, 0);
+    line(1000, 1000 - i, 1000 - i, 0);
+    line(1000, i, 1000 - i, 1000);
+    line(i, 1000, 0, i);
   }
 }
