@@ -12,7 +12,7 @@ import java.io.InputStream;
 import java.io.OutputStream; 
 import java.io.IOException; 
 
-public class Assignment2 extends PApplet {
+public class Extra2 extends PApplet {
 
 int frame = 0;
 int spaceBetweenLines = 10;
@@ -49,7 +49,7 @@ public void draw()
 }
   public void settings() {  size(1000, 1000); }
   static public void main(String[] passedArgs) {
-    String[] appletArgs = new String[] { "Assignment2" };
+    String[] appletArgs = new String[] { "Extra2" };
     if (passedArgs != null) {
       PApplet.main(concat(appletArgs, passedArgs));
     } else {

@@ -2,14 +2,19 @@
 
 ## 01 - Fundamentals
 
-	Assignment - Klar
-	Extra - DNF
+	Assignment - Done
 
 ## 02 - Learning to Program
 
-	Assignment - Klar
-	Extra - Klar
+	Assignment - Done
+	Extra - Done
 
 ## 03 - Vectors
-	Assignment - WIP
+	Assignment - Done
 	
+## 04 - Input and Motion
+	Assignment - Done
+
+## 06 - Class and Objects
+	Assignment - Done
+
