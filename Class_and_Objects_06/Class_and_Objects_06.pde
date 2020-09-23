@@ -37,8 +37,9 @@ void draw()
     if (gameover)
     {
       fill (0, 255, 0);
-      textSize(32);
-      text("Game Over", 415, 500);
+      textSize(64);
+      textAlign(CENTER, CENTER);
+      text("GAME OVER", width/2, height/2);
     }
   }
   time = elapsedTime;

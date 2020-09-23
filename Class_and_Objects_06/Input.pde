@@ -28,3 +28,23 @@ void keyReleased()
   else if (keyCode == DOWN || key == 's')
     moveDown = false;
 }
+
+PVector input()
+{
+  PVector input = new PVector();
+
+  if (moveLeft)
+      input.x += -1;
+
+  if (moveRight) 
+    input.x +=  1;
+
+  if (moveUp)    
+    input.y += -1;
+
+  if (moveDown)  
+    input.y +=  1;
+
+  input.normalize();
+  return input;
+}
