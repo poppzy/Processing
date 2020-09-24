@@ -18,3 +18,5 @@
 ## 06 - Class and Objects
 	Assignment - Done
 
+## 07 - Collision and Zombies
+	Assignment - Done
