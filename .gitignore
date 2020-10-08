@@ -8,5 +8,4 @@ application.windows32
 application.windows64
 application.macosx
 out
-Fundamentals_01/build-tmp/sketch_200902a.class
-Fundamentals_01/build-tmp/source/sketch_200902a.java
+**/build-tmp/

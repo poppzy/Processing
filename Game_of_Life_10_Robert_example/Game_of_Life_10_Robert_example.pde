@@ -1,4 +1,4 @@
-GameObject cells[][];    //Our game grid matrix
+GameObject[][] cells;    //Our game grid matrix
 float cellSize = 10;    //Size of our cells
 int numberOfColums;
 int numberOfRows;
