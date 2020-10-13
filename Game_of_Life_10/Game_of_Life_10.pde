@@ -1,4 +1,5 @@
 GameObject[][] cells;
+GameObject[][] cellsBuffer;
 float cellSize = 10;
 int numberOfColumns;
 int numberOfRows;
@@ -22,6 +23,7 @@ void init()
 
   //Initiate
   cells = new GameObject[numberOfColumns][numberOfRows];
+  cellsBuffer = new GameObject[numberOfColumns][numberOfRows];
 
   //For each row
   for (int y = 0; y < numberOfRows; y++)
@@ -31,6 +33,7 @@ void init()
     {
       //Create our game object, multiply by cellSize for correct placement
       cells[x][y] = new GameObject(new PVector(x, y).mult(cellSize));
+      cellsBuffer[x][y] = new GameObject(new PVector(x, y).mult(cellSize));
 
       //Random if it should be alive
       if (random(0, 100) < fillPercentage) 
@@ -44,13 +47,6 @@ void init()
 void draw()
 {
   background(50);
-
-  GameObject[][] cellsCopy = new GameObject[numberOfColumns][numberOfRows];
-  
-  for (int i = 0; i < numberOfColumns; i++) 
-  {
-  arrayCopy(cells[i], cellsCopy[i]);
-  }
 
 
   //Check for alive neighbors
@@ -102,23 +98,27 @@ void draw()
       }
 
 
-
-
-
       if (aliveNeighbors < 2 || aliveNeighbors > 3)
       {
-      	cellsCopy[x][y].alive = false;
+      	cellsBuffer[x][y].alive = false;
       }
       else if (aliveNeighbors == 3) 
       {
-      	cellsCopy[x][y].alive = true;	
+      	cellsBuffer[x][y].alive = true;	
       }
     }
   }
-  for (int i = 0; i < numberOfColumns; i++) 
+
+  for (int y = 0; y < numberOfRows; y++)
   {
-  arrayCopy(cellsCopy[i], cells[i]);
+    //For each column
+    for (int x = 0; x < numberOfColumns; x++) 
+    {
+      //Draw our cell
+      cells[x][y].alive = cellsBuffer[x][y].alive;
+    }
   }
+
   //For each row
   for (int y = 0; y < numberOfRows; y++)
   {
