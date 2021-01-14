@@ -1,4 +1,4 @@
-# Processing
+# Processing - Programming Fundamentals
 
 ## 01 - Fundamentals
 
@@ -21,6 +21,8 @@
 ## 07 - Collision and Zombies
 	Assignment - Done
 
-## Game Programming - 01 - Trigonometry
+# Processing - Game Programming
+
+## 01 - Trigonometry
 	Sin and Cos Waves Assignment - Done
 	Circle Assignment - WIP
