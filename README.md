@@ -20,3 +20,7 @@
 
 ## 07 - Collision and Zombies
 	Assignment - Done
+
+## Game Programming - 01 - Trigonometry
+	Sin and Cos Waves Assignment - Done
+	Circle Assignment - WIP
