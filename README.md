@@ -26,4 +26,4 @@
 ## 01 - Trigonometry
 	Sin and Cos Waves Assignment - Done
 	Circle Assignment - Done
-	Extracurricular - Done
+	Extra - Done
