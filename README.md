@@ -27,3 +27,6 @@
 	Sin and Cos Waves Assignment - Done
 	Circle Assignment - Done
 	Extra - Done
+
+## 02 - Interfaces and Random Walker
+	Assignment - Done
