@@ -20,6 +20,10 @@ class OscWil implements WalkerInterface {
     float x = (int) random(0, playAreaWidth);
     float y = (int) random(0, playAreaHeight);
 
+    //TO DO: Fix a more upper left StartPosition.
+    //float x = (int) playAreaWidth - (playAreaWidth / 2);
+    //float y = (int) playAreaHeight - (playAreaHeight / 2);
+
     localX = x;
     localY = y;
     localPlayAreaWidth = playAreaWidth;
